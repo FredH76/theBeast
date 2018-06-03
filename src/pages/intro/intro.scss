@@ -1,0 +1,34 @@
+page-intro {
+    .dragonBackground{
+        background-image : url('../assets/imgs/dragon6.jpg');
+        background-size: 400px 400px;
+        color: lightgray;
+    }
+
+    .logoContainer{
+        display: flex; 
+        justify-content: center;
+        margin:20px;
+    }
+
+    .logoMusee{
+        border-radius: 20px;
+        background-color: white;
+        overflow: hidden;
+        max-width: 300px;
+        object-fit: contain;
+    }
+
+   .messageContainer{
+        margin:20px;
+        padding:20px;
+        background-color: rgba(76, 73, 73,0.7);
+        font-size: 14px;
+        border-radius: 20px;
+        color:white;
+        min-height: 50%;
+        text-align: justify;
+    }
+
+
+}

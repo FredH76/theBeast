@@ -1,0 +1,30 @@
+page-map {
+    .dragonBackground{
+        background-image : url('../assets/imgs/dragon6.jpg');
+        background-size: 400px 400px;
+        color: lightgray;
+    }
+    
+    img {
+        max-width:none;
+    }
+
+    .navbar .navbar-inner .progressbar {
+        margin-top: 0;
+        color: #fff;
+        background: rgba(91, 91, 93, .1);
+        height: 30 px;
+        border-radius: 6 px
+    }
+    
+    .navbar.navbar-inner.progressbar span {
+        background: #2196f3
+    }
+
+    .text-total-coins{
+        font-family: "Roboto", "Helvetica Neue", sans-serif;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+
+}

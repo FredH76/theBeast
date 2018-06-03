@@ -1,0 +1,55 @@
+page-config {
+    .dragonBackground{
+        background-image : url('../assets/imgs/dragon6.jpg');
+        background-size: 400px 400px;
+        color: lightgray;
+    }
+
+    .logoContainer{
+        display: flex; 
+        justify-content: center;
+        margin:20px;
+    }
+
+    .logoMusee{
+        border-radius: 20px;
+        background-color: white;
+        overflow: hidden;
+        max-width: 300px;
+        object-fit: contain;
+    }
+
+    .messageContainer{
+        margin:20px;
+        padding:20px;
+        //background-color: #a9a9a97a;
+        border-radius: 20px;
+        color:white;
+        min-height: 50%;
+        width: 300px;
+        max-width: 400px;
+    }
+
+    .item-md{
+        color:white;
+        background: transparent;
+    }
+
+    .item-radio-checked.item-md ion-label{
+        color :#488aff;
+        font-weight: bold;
+    }
+    
+    .radio-md .radio-icon{
+        border-color: white;
+    }
+           
+    .list-header-md{
+        border-top:none;
+    }
+
+    .list-md .item-block .item-inner,
+    .item-md.item-block.item-inner{
+        border-bottom: none;
+    }
+}   
