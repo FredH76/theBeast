@@ -38,11 +38,49 @@
 
 </ion-header>
 
-
+<!-- resize map to fit screen height
 <ion-content padding class="dragonBackground">
   <div style="height:100%">
     <ion-scroll class="imageContainer" scrollX="true" style="height:100%">
       <img src="assets/imgs/plan2.png" full-height>
     </ion-scroll>
   </div>
+</ion-content>
+-->
+<ion-content padding class="dragonBackground">
+  <ion-scroll class="imageContainer" scrollX="true" scrollY="true" zoom="true" maxZoom="2" style="height:100%">
+
+    <!-- CHALLENGE 1 BUTTON-->
+    <div *ngIf="challenge[0].state=='solved' || challenge[0].state=='inProgress' " style="position: absolute; left:120px; top:180px">
+      <div *ngIf="challenge[0].state=='solved'">
+        <img src="assets/imgs/map-marker-1.png" class="legend-icon">
+      </div>
+      <div *ngIf="challenge[0].state=='inProgress'">
+        <img src="assets/imgs/map-marker-2.png" class="legend-icon">
+      </div>
+    </div>
+
+    <!-- MAP AREA-->
+    <img src="assets/imgs/plan2.png" style="width: 1024px"> LEGENDE:
+    <!-- CURRENT CHALLENGE -->
+    <div class="legend-container">
+      <div>
+        <img src="assets/imgs/map-marker-2.png" class="legend-icon">
+      </div>
+      <div>
+        Rendez-vous ici pour resoudre l'énigme
+      </div>
+    </div>
+
+    <!-- PREVIOUS CHALLENGE -->
+    <div class="legend-container">
+      <div>
+        <img src="assets/imgs/map-marker-1.png" class="legend-icon">
+      </div>
+      <div>
+        Enigme resolue
+      </div>
+    </div>
+
+  </ion-scroll>
 </ion-content>

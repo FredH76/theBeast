@@ -5,10 +5,6 @@ page-map {
         color: lightgray;
     }
     
-    img {
-        max-width:none;
-    }
-
     .navbar .navbar-inner .progressbar {
         margin-top: 0;
         color: #fff;
@@ -26,5 +22,29 @@ page-map {
         font-size: 18px;
         vertical-align: middle;
     }
+
+    .scroll-content {
+        padding: 0 !important;
+    }
+
+    .legend-icon{
+        height:40px;
+    }
+
+    .legend-container{
+        display:flex;
+        align-items: center;
+        color : white;
+        font-size : 17px;
+        .label-current-enigma{
+            color:#74fb93;
+        }
+    }
+
+    img {
+        max-width:none;
+    }
+
+
 
 }

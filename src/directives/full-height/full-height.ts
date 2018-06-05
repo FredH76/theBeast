@@ -14,22 +14,24 @@ export class FullHeightDirective {
   /**
    * function to automatically adjust image height to vertical space available
    */
-  ngAfterViewInit() {
+  ngAfterContentChecked() {
     let height: number;
 
     //get the image container
     let imageContainer = this.findImageContainerof(this.el);
     let contHeight = imageContainer.clientHeight;
 
-    //get height of navBar
+    /*get height of navBar
     let navbarElt = document.getElementsByClassName("toolbar");
     let navHeight = navbarElt[0].clientHeight;
+    
 
     //compute final heigth
     height = contHeight - navHeight;
+    */
 
     //set height of the image
-    this.renderer.setElementStyle(this.el, 'height', height + "px");
+    this.renderer.setElementStyle(this.el, 'height', contHeight + "px");
   }
 
 
