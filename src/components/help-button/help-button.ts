@@ -13,10 +13,25 @@ import { Component } from '@angular/core';
 export class HelpButtonComponent {
 
   text: string;
+  indice1active: boolean = true;
+  indice2active: boolean = false;
+  indice3active: boolean = false;
 
   constructor() {
     console.log('Hello HelpButtonComponent Component');
     this.text = 'Hello World';
+  }
+
+  public clickIndice1 = function () {
+    this.indice2active = true;
+  }
+
+  public clickIndice2 = function () {
+    if (this.indice2active)
+      this.indice3active = true;
+  }
+
+  public clickIndice3 = function () {
   }
 
 }

@@ -2,20 +2,19 @@
 <div>
   <ion-fab bottom right>
     <button ion-fab>
-      <ion-icon name="add"></ion-icon>
+      <img class="fab-icon" src="assets/imgs/icon-help.png">
     </button>
     <ion-fab-list side="top">
-      <button ion-fab>
-        <ion-icon name="logo-facebook"></ion-icon>
+      <button ion-fab (click)="clickIndice1()">
+        <img class="fab-icon" src="assets/imgs/icon-help-1.png">
       </button>
-      <button ion-fab>
-        <ion-icon name="logo-twitter"></ion-icon>
+      <button ion-fab (click)="clickIndice2()">
+        <img *ngIf="!indice2active" class="fab-icon" src="assets/imgs/icon-help-2-inactive.png" style="height:68px">
+        <img *ngIf="indice2active" class="fab-icon" src="assets/imgs/icon-help-2.png">
       </button>
-      <button ion-fab>
-        <ion-icon name="logo-vimeo"></ion-icon>
-      </button>
-      <button ion-fab>
-        <ion-icon name="logo-googleplus"></ion-icon>
+      <button ion-fab (click)="clickIndice3()">
+        <img *ngIf="!indice3active" class="fab-icon" src="assets/imgs/icon-help-3-inactive.png" style="height:68px">
+        <img *ngIf="indice3active" class="fab-icon" src="assets/imgs/icon-help-3.png">
       </button>
     </ion-fab-list>
   </ion-fab>
