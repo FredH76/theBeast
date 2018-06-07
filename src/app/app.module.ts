@@ -10,6 +10,7 @@ import { ConfigPage } from '../pages/config/config';
 import { IntroPage } from '../pages/intro/intro';
 import { MapPage } from '../pages/map/map';
 import { FullHeightDirective } from '../directives/full-height/full-height';
+import { HelpButtonComponent } from '../components/help-button/help-button';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FullHeightDirective } from '../directives/full-height/full-height';
     ConfigPage,
     IntroPage,
     MapPage,
-    FullHeightDirective
+    FullHeightDirective,
+    HelpButtonComponent
   ],
   imports: [
     BrowserModule,
